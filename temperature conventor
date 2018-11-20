@@ -1,0 +1,15 @@
+while True :
+	tempValue = input('请输入温度值并以F/C/f/c结束 ：')
+	inttemperature =int(''.join(list(tempValue[:-1])))
+	if tempValue[-1] in ['c','C'] :
+		print(f'你输入的是摄氏度{tempValue[:-1]}')
+		F = 32 + (inttemperature * 1.8)
+		print(f'{''.join(list(tempValue[:-1])}摄氏度 转换 为华氏度是{F}华氏度')
+	elif tempValue[-1] in ['f','F'] :
+		print(f'你输入的是华氏度{tempValue[:-1]}')
+		C = (inttemperature - 32) / 1.8
+		print(f'{''.join(list(tempValue[:-1])}华氏度 转换 为摄氏度是{C}摄氏度')
+	elif tempValue == 'quit'
+		break
+	else ：
+		print(‘你输入的数值有误，请重新输入，温度值以F/C/f/c结束')
